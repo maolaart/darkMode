@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode Simulation</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>DARKMODE SIMULATION <sub>byMoalaart</sub></h1>
+        <nav>
+            <a href="/">HOME</a>
+            <a onclick="darkMode()" id="darkM">DARK-MODE</a>
+            <!-- <a onclick="lightMode()" id="lightM">LIGHT-MODE</a> -->
+        </nav>
+    </div>
+
+    <script>
+        let body = document.body;
+        let darkM = document.getElementById('darkM');  
+        let lightM = document.getElementById('lightM') ; 
+
+        function darkMode(){
+            if (body.classList.toggle('dark') == true){
+                darkM.textContent = 'LIGHT-MODE';
+                
+            } else {
+            // body.classList.toggle('dark');
+            darkM.textContent = 'DARK-MODE';
+            }
+        }
+        // function lightMode(){
+        //     console.log('testing light..')
+        //     body.classList.toggle('light');
+        //     console.clear()
+        // }
+
+    
+       
+        
+       
+    </script>
+</body>
+
+</html>
